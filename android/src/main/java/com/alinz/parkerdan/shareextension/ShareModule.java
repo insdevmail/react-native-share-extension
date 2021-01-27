@@ -54,9 +54,9 @@ public class ShareModule extends ReactContextBaseJavaModule {
             if (type == null) {
                 type = "";
             }
-            System.out.println('================================================');
+            System.out.println("================================================");
             System.out.println(type);
-            System.out.println('================================================');
+            System.out.println("================================================");
             if (Intent.ACTION_SEND.equals(action) && "text/plain".equals(type)) {
                 value = intent.getStringExtra(Intent.EXTRA_TEXT);
             } else if (Intent.ACTION_SEND.equals(action) && ("image/*".equals(type) || "image/jpeg".equals(type) || "image/png".equals(type) || "video/*".equals(type) || "video".equals(type))) {
